@@ -1,8 +1,7 @@
 body {
-  background-image: url('img/salesforce.jpg');
-  opacity: 0.6;
+  background-image: url('../img/salesforce.jpg');
   background-size: cover;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; 
 }
 /* Estilizando Navbar */
 nav {
