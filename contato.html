@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contato</title>
+</head>
+
+<body>
+    <!--Menu Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="corpo">
+        <div class="container">
+            <div class="card">
+                <h1>Entre em Contato</h1>
+                <form action="/formulario-contato" method="post">
+                    <div>
+                        <input type="texto" id="nome" name="nome_usuario" placeholder="Nome Completo">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email_usuario" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea id="texto" name="texto_usuario" placeholder="Texto"></textarea>
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
