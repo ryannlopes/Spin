@@ -51,12 +51,12 @@ h1{
 }
 
 .coluna-esquerda {
-  width: 55%;
+  flex-basis: 50%;
   padding: 20px;
 }
   
 .coluna-direita {
-  width: 45%;
+  flex-basis: 50%;
   display: flex;
   justify-content: center;
   padding: 20px;
