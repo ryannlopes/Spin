@@ -17,7 +17,7 @@ body {
 }
 
 /* Define outras propriedades de estilo para o modo escuro */
-.dark-mode a {
+.dark-mode a li {
   color: #ccc;
   text-decoration: none;
 }
@@ -27,7 +27,6 @@ body {
   color: #fff;
   border: 1px solid #fff;
 }
-
 /* Adicione outras regras de estilo conforme necessário */
 
 /* Estilizando Navbar */
@@ -35,16 +34,21 @@ nav {
   background-color: #032d60;
   height: 50px;
   text-align: center;
-  border-radius: 10px;
+  position: fixed;
+  width: 100%;
+  padding: 1px;
+  top: 0;
+  left: 0;
+  font-size: 20;
+  overflow: hidden;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  display:flex; 
-  align-items:center;
+  display:flex;
+  align-items: center;
 }
 
 nav li {
@@ -61,10 +65,17 @@ nav li a {
 
 nav li a:hover {
   background-color: #ddd;
-  color: black;
+  color: white;
 }
 
+
 /* Fim da estilização da NavBar */
+.main {
+  margin-top: 1%;
+  /* o valor de margin-top deve ser igual ou maior que a altura do menu para evitar que o conteúdo fique por trás do menu */
+  padding: 20px;
+}
+
 .titulo{
   font-family: Arial, Helvetica, sans-serif;
   color: #032d60;
@@ -100,6 +111,11 @@ nav li a:hover {
   text-align: justify;
   font-weight: 600;
 }
+main {
+  margin-top: 100px;
+  /* o valor de margin-top deve ser igual ou maior que a altura do menu para evitar que o conteúdo fique por trás do menu */
+  padding: 20px;
+}
 
 /* Centralizando video Youtube */
 iframe {
@@ -131,10 +147,10 @@ iframe {
 } 
 footer {
   background-color: #032d60;
+  color: white;
   padding: 20px;
   text-align: center;
-  color: white;
-  border-radius: 2px;
+  font-size: 15px;
 }
 
 .containerFooter {
@@ -160,6 +176,16 @@ th {
   border-radius: 10px;
   background-color: #032d60;
   color: white;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 

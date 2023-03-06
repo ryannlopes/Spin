@@ -3,19 +3,52 @@ body {
     background-size: cover;
     font-family: 'Roboto', sans-serif; 
   }
-  /* Estilizando Navbar */
+ /* Define a cor de fundo do corpo para preto */
+.dark-mode {
+  background-color: #3a3944;
+}
+.dark-mode .card{
+  background-color: rgba(58, 53, 53, 0.7);
+}
+
+/* Define a cor do texto para branco */
+.dark-mode h1, .dark-mode h2, .dark-mode p, .dark-mode th, .dark-mode td, .dark-mode li{
+  color: #fff;
+}
+
+/* Define outras propriedades de estilo para o modo escuro */
+.dark-mode a li {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.dark-mode .btn {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* Adicione outras regras de estilo conforme necessário */
+
+/* Estilizando Navbar */
 nav {
   background-color: #032d60;
   height: 50px;
   text-align: center;
-  border-radius: 10px;
+  position: fixed;
+  width: 100%;
+  padding: 1px;
+  top: 0;
+  left: 0;
+  font-size: 20;
+  overflow: hidden;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  display:flex;
+  align-items: center;
 }
 
 nav li {
@@ -32,7 +65,15 @@ nav li a {
 
 nav li a:hover {
   background-color: #ddd;
-  color: black;
+  color: white;
+}
+
+
+/* Fim da estilização da NavBar */
+.main {
+  margin-top: 1%;
+  /* o valor de margin-top deve ser igual ou maior que a altura do menu para evitar que o conteúdo fique por trás do menu */
+  padding: 20px;
 }
 h1{
   color: #032d60;
