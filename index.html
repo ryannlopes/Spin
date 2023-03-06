@@ -11,6 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <title>CRM</title>
+
+  <!-- Script Modo Dark -->
+  <script>
+    function toggleDarkMode() {
+      var body = document.querySelector('body');
+      body.classList.toggle('dark-mode');
+    }
+    </script>
 </head>
 
 <body>
@@ -20,6 +28,8 @@
       <li><a href="#">Início</a></li>
       <li><a href="contato.html">Contato</a></li>
       <li><a href="login.html">Login</a></li>
+      <li><button onclick="toggleDarkMode()">Modo Dark</button>
+      </li>
     </ul>
   </nav>
   <div class="corpo">
