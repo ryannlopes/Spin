@@ -73,6 +73,7 @@ nav li a {
 
 nav li a:hover {
   background-color: #2980b9;
+  border-radius: 100px;
   color: white;
 }
 
