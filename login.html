@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Tela de Login</title>
-  <link rel="icon" type="image/png" href="img/salesforce-icon.jpg"/>
+  <link rel="icon" type="image/png" href="img/salesforce-icon.jpg" />
   <link rel="stylesheet" href="css/login.css">
 </head>
 
@@ -12,30 +13,33 @@
     var body = document.querySelector('body');
     body.classList.toggle('dark-mode');
   }
-  </script>
+</script>
+
 <body>
-   <!--Menu Navbar -->
-   <nav>
-    <ul>
-      <li><img src="img/salesforceLogo.png" height="70px" width="100px" alt=""></li>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="crm.html">O que é CRM?</a></li>
-      <li><a href="login.html">Customer 360</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li class="right"><button onclick="toggleDarkMode()">Modo Dark</button>
-      </li>
-    </ul>
-  </nav>
-    <div class="container">
-      <div class="card">
-        <h1>Login</h1>
-        <form>
-          <input type="text" placeholder="Usuário">
-          <input type="password" placeholder="Senha">
-          <button>Entrar</button>
-          <a href="index.html">Esqueceu a Senha</a>
-        </form>
+  <!-- Menu Navbar -->
+  <section>
+    <nav>
+      <div class="container-nav">
+        <ul class="logo-navbar">
+          <li><img src="img/salesforceLogo.png" height="70px" width="100px" alt="logo" /></li>
+          <li class="right"><a href="index.html">Início</a></li>
+          <li><a href="crm.html">O que é CRM?</a></li>
+          <li><a href="login.html">Customer 360</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><button onclick="toggleDarkMode()">Modo Dark</button></li>
+        </ul>
       </div>
+    </nav>
+  </section>
+  <div class="container">
+    <div class="card">
+      <h1>Login</h1>
+      <form>
+        <input type="text" placeholder="Usuário">
+        <input type="password" placeholder="Senha">
+        <button>Entrar</button>
+        <a href="index.html">Esqueceu a Senha</a>
+      </form>
     </div>
-  </body>
-  
+  </div>
+</body>

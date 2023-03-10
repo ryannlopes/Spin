@@ -73,8 +73,14 @@ nav li a:hover {
   color: white;
 }
 
+.logo-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
 
 /* Fim da estilização da NavBar */
+
 .main {
   margin-top: 1%;
   /* o valor de margin-top deve ser igual ou maior que a altura do menu para evitar que o conteúdo fique por trás do menu */
@@ -83,6 +89,12 @@ nav li a:hover {
 h1{
   color: #032d60;
   text-align: center;
+}
+.container-nav {
+  padding: 0 200px;
+}
+.right {
+  margin-left: auto;
 }
 /* Fim da estilização da NavBar */
   
