@@ -4,10 +4,7 @@
 
 body {
   background-color: #f1f1f16b;
-<<<<<<< Updated upstream
-=======
   margin: 0 !important;
->>>>>>> Stashed changes
 }
 
 /* Define a cor de fundo do corpo para preto */
@@ -80,13 +77,7 @@ nav li a:hover {
 
 /* Fim da estilização da NavBar */
 .main {
-<<<<<<< Updated upstream
-  margin-top: 1%;
-  /* o valor de margin-top deve ser igual ou maior que a altura do menu para evitar que o conteúdo fique por trás do menu */
-  padding: 20px;
-=======
   margin-top: 100px;
->>>>>>> Stashed changes
 }
 
 .titulo{
@@ -164,17 +155,6 @@ iframe {
 footer {
   margin-top: 80px;
   background-color: #032d60;
-<<<<<<< Updated upstream
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 15px;
-}
-
-.containerFooter {
-  max-width: 960px;
-  margin: 0 auto;
-=======
   height: 100px;
   text-align: center;
   width: 100%;
@@ -187,7 +167,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
->>>>>>> Stashed changes
 }
 
 table {
