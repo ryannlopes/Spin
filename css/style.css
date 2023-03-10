@@ -18,7 +18,7 @@ body {
 }
 
 /* Define outras propriedades de estilo para o modo escuro */
-.dark-mode a li {
+.dark-mode a li, .dark-mode label {
   color: #ccc;
   text-decoration: none;
 }
@@ -28,12 +28,28 @@ body {
   color: #fff;
   border: 1px solid #fff;
 }
+.dark-mode textarea{
+  background-color: #444;
+  color: white;
+}
+.dark-mode input[type="text"],
+.dark-mode input[type="email"]{
+  background-color: #444;
+  color: white;
+}
+
+.dark-mode input[type="submit"]{
+  background-color: #3498db;
+}
+.dark-mode input[type="submit"]:hover {
+  background-color: #2980b9;
+}
 /* Adicione outras regras de estilo conforme necessário */
 
 /* Estilizando Navbar */
 nav {
   background-color: #032d60;
-  height: 50px;
+  height: 70px;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -65,7 +81,8 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #ddd;
+  background-color: #2980b9;
+  border-radius: 100px;
   color: white;
 }
 
@@ -77,6 +94,7 @@ nav li a:hover {
 
 /* Fim da estilização da NavBar */
 .main {
+
   margin-top: 100px;
 }
 
@@ -155,6 +173,7 @@ iframe {
 footer {
   margin-top: 80px;
   background-color: #032d60;
+
   height: 100px;
   text-align: center;
   width: 100%;
@@ -203,4 +222,27 @@ button {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0;
+}
 
+input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
