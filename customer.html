@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer 360</title>
+    <link rel="icon" type="image/png" href="img/salesforce-icon.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<!-- Script Modo Dark -->
+<script>
+    function toggleDarkMode() {
+        var body = document.querySelector("body");
+        body.classList.toggle("dark-mode");
+    }
+</script>
+
+<body>
+    <!-- Menu Navbar -->
+    <section>
+        <nav>
+            <div class="container">
+                <ul class="logo-navbar">
+                    <li><img src="img/salesforceLogo.png" height="70px" width="100px" alt="logo" /></li>
+                    <li class="right"><a href="index.html">Início</a></li>
+                    <li><a href="crm.html">O que é CRM?</a></li>
+                    <li><a href="customer.html">Customer 360</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><button onclick="toggleDarkMode()">Modo Dark</button></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Content -->
+    <section>
+        <div class="main">
+            <div class="container">
+                <img class="" src="img/customer360-logo.png" alt="">
+                <div class="container-main">
+                    <div class="coluna-esquerda">
+                        <h1 class="titulo">
+                            Unifique esforços e encante os clientes com o Customer 360 e o Salesforce Genie.
+                        </h1>
+                    </div>
+                    <div class="coluna-direita">
+                        <img class="img-responsive" src="img/bannerCustumer.jpg" alt="">
+                    </div>
+                </div>
+                <div class="container-main">
+                    <div class="coluna-esquerda">
+                        <video class="img-responsive" controls>
+                            <source src="video/CustomerSlack.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="coluna-direita">
+                        <h1 class="titulo">Encante os clientes e faça seu negócio avançar.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
