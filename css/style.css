@@ -101,8 +101,12 @@ nav li a:hover {
 .titulo{
   font-family: Arial, Helvetica, sans-serif;
   color: #032d60;
-  padding: 20px;
+  margin-left: 20px;
   font-size: 30px;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
 }
 
 .list{
@@ -127,12 +131,10 @@ nav li a:hover {
   
 .coluna-direita {
   flex-basis: 50%;
-  display: flex;
-  justify-content: center;
 }
 
 .jumbotron-text {
-  font-size: 20px;
+  font-size: 17px;
   text-align: justify;
   font-weight: 600;
 }
@@ -145,7 +147,12 @@ main {
 /* Centralizando video Youtube */
 iframe {
   display: block;
-  width: 80%; /* ou um valor fixo, como 600px */
+  width: 100%; /* ou um valor fixo, como 600px */
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+video{
   border-radius: 10px;
 }
   
