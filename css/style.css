@@ -58,6 +58,7 @@ nav {
   left: 0;
   font-size: 20;
   overflow: hidden;
+  z-index: 9999;
 }
 
 nav ul {
@@ -117,7 +118,7 @@ p{
 
 /* Separando em Colunas */
 .container {
-  padding: 0 200px;
+  padding: 0 150px;
 }
 
 .container-main {
@@ -253,3 +254,95 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #2980b9;
 }
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-items {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+}
+
+.carousel-items img {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 90%;
+  left: 48%;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  z-index: 2;
+  background-color: #999;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #333;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: transparent;
+  box-shadow: none;
+  opacity: 30%;
+  color: #000;
+  border: none;
+  font-size: 35px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 80%;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.slide-active {
+  z-index: 1 !important;
+  opacity: 1 !important;
+}
+/* End Carousel */
