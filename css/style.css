@@ -39,7 +39,7 @@ body {
 }
 
 .dark-mode input[type="submit"]{
-  background-color: #3498db;
+  background-color: #007bff;
 }
 .dark-mode input[type="submit"]:hover {
   background-color: #2980b9;
@@ -220,7 +220,7 @@ th {
   color: white;
 }
 
-button {
+.btn {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -243,7 +243,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #3498db;
+  background-color: #007bff;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -320,7 +320,7 @@ input[type="submit"]:hover {
   background-color: transparent;
   box-shadow: none;
   opacity: 30%;
-  color: #000;
+  color: white;
   border: none;
   font-size: 35px;
   padding: 10px;
