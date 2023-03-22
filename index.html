@@ -24,31 +24,30 @@
   </head>
 
   <body>
-    <!-- Menu Navbar -->
-    <section>
-      <nav>
-        <div class="container">
-          <ul class="logo-navbar">
-            <li><img src="img/salesforceLogo.png" height="70px" width="100px" alt="logo"/></li>
-            <li class="right"><a href="index.html">Início</a></li>
-            <li><a href="crm.html">O que é CRM?</a></li>
-            <li><a href="customer.html">Customer 360</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="loginSalesforce.html">Login ORG</a></li>
-            <li><button onclick="toggleDarkMode()">Modo Dark</button></li>
-          </ul>
-        </div>
-      </nav>
-    </section>
+     <!-- Menu Navbar -->
+  <section>
+    <nav>
+      <div class="container">
+        <ul class="logo-navbar">
+          <li><img src="img/salesforceLogo.png" height="70px" width="100px" alt="logo" /></li>
+          <li class="right"><a href="index.html">Início</a></li>
+          <li><a href="crm.html">O que é CRM?</a></li>
+          <li><a href="customer.html">Customer 360</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><button class="btn" onclick="toggleDarkMode()">Modo Dark</button></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
 
     <!-- Carousel -->
     <section>
       <div class="main container">
         <div class="carousel">
           <div class="carousel-items">
-            <img class="slide-active" src="https://via.placeholder.com/2048x1080?text=Slide+1" alt="Slide 1">
-            <img class="" src="https://via.placeholder.com/2048x1080?text=Slide+2" alt="Slide 2">
-            <img class="" src="https://via.placeholder.com/2048x1080?text=Slide+3" alt="Slide 3">
+            <img class="slide-active" src="img/slide01.png" alt="Slide 1">
+            <img class="" src="img/slide02.jpg" alt="Slide 2">
+            <img class="" src="img/slide03.jpg" alt="Slide 3">
           </div>
           <ul class="indicators">
             <li class="indicator active"></li>
@@ -66,27 +65,15 @@
     <section>
       <div class="main">
         <div class="container">
-          <h1 class="titulo" style="text-align: center">CRM: O que é?</h1>
           <div class="container-main">
             <div class="coluna-esquerda">
-              <p class="jumbotron-text">
-                Para começar: o que é CRM? CRM é a sigla usada para Customer
-                Relationship Management e se refere ao conjunto de práticas,
-                estratégias de negócio e tecnologias focadas no relacionamento com
-                o cliente. Confira ao lado tudo que você precisa saber sobre CRM.
-              </p>
+              <h1 class="titulo">Entregue sucesso agora com o Salesforce Customer 360.</h1>
+              <p class="jumbotron-text">O Customer 360 é a nossa suíte de produtos e serviços 
+                                        que ajuda 98% dos clientes a alcançar ou superar suas metas de ROI.</p>
+              <a class="btn" href="customer.html">Saiba Mais</a>
             </div>
             <div class="coluna-direita">
-              <iframe
-                width="460"
-                height="300"
-                src="https://www.youtube.com/embed/vGMPc2Z5NJU"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                    gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+              <img class="img-responsive" src="img/banner.png" alt="">
             </div>
           </div>
           <div style="display: flex; justify-content: center;">
@@ -123,7 +110,7 @@
                   <label for="mensagem">Mensagem:</label>
                   <textarea id="message" name="message" required></textarea>
 
-                  <input type="submit" value="Enviar" />
+                  <input class="btn" type="submit" value="Enviar" />
                 </form>
               </div>
               <div class="coluna-direita">
