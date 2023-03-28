@@ -24,7 +24,7 @@ body {
 }
 
 .dark-mode .btn {
-  background-color: #444;
+  background-color: #e3262e;
   color: #fff;
   border: 1px solid #fff;
 }
@@ -33,27 +33,42 @@ body {
   color: white;
 }
 .dark-mode input[type="text"],
-.dark-mode input[type="email"]{
+.dark-mode input[type="email"],
+.dark-mode input[type="Name"]{
   background-color: #444;
   color: white;
 }
 
 .dark-mode input[type="submit"]{
-  background-color: #007bff;
+  background-color: #e3262e;
 }
 .dark-mode input[type="submit"]:hover {
-  background-color: #2980b9;
+  background-color: #691418;
+}
+
+.dark-mode .product-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+.dark-mode nav{
+  background-color: #691418;
+}
+.dark-mode footer{
+  background-color: #691418;
 }
 /* Adicione outras regras de estilo conforme necessário */
 
 /* Estilizando Navbar */
 nav {
-  background-color: #032d60;
+  background-color: #e3262e;
   height: 70px;
   text-align: center;
   position: fixed;
   width: 100%;
-  padding: 1px;
+  padding: 0px;
   top: 0;
   left: 0;
   font-size: 20;
@@ -75,14 +90,14 @@ nav li {
 
 nav li a {
   display: block;
-  color: white;
+  color: #ffbc4a;
   text-align: center;
   padding: 16px;
   text-decoration: none;
 }
 
 nav li a:hover {
-  background-color: #2980b9;
+  background-color: #ffbc4a;
   border-radius: 100px;
   color: white;
 }
@@ -90,7 +105,11 @@ nav li a:hover {
 .logo-navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0;
+}
+.logo-navbar img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 /* Fim da estilização da NavBar */
@@ -98,10 +117,22 @@ nav li a:hover {
   margin-top: 100px;
   
 }
+.nav-card {
+  background-color: #e3262e;
+  height: 70px;
+  text-align: center;
+  padding: 0px;
+  top: 0;
+  left: 0;
+  font-size: 20;
+  overflow: hidden;
+  border-radius: 10px;
+  color: white;
+}
 
 .titulo{
   font-family: Arial, Helvetica, sans-serif;
-  color: #032d60;
+  color: #e3262e;
   margin-left: 20px;
   font-size: 30px;
 }
@@ -112,7 +143,7 @@ p{
 
 .list{
   font-family: Arial, Helvetica, sans-serif;
-  color: #032d60;
+  color: #e3262e;
   padding: 20px;
 }
 
@@ -128,10 +159,32 @@ p{
 
 .coluna-esquerda {
   flex-basis: 50%;
+  padding: 20px;
 }
   
 .coluna-direita {
   flex-basis: 50%;
+  padding: 20px;
+}
+
+.primeira-coluna {
+  flex-basis: 25%;
+  padding: 20px;
+}
+  
+.segunda-coluna {
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+.terceira-coluna {
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+.quarta-coluna {
+  flex-basis: 25%;
+  padding: 20px;
 }
 
 .jumbotron-text {
@@ -180,7 +233,7 @@ video{
 } 
 footer {
   margin-top: 80px;
-  background-color: #032d60;
+  background-color: #e3262e;
 
   height: 100px;
   text-align: center;
@@ -216,13 +269,13 @@ th, td {
 
 th {
   border-radius: 10px;
-  background-color: #032d60;
+  background-color: #e3262e;
   color: white;
 }
 
 .btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #691418;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -244,7 +297,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #007bff;
+  background-color: #e3262e;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -253,7 +306,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #2980b9;
+  background-color: #e3262e;
 }
 
 /* Carousel */
@@ -352,13 +405,12 @@ input[type="submit"]:hover {
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 20px;
   text-align: center;
 }
 
 .product-card img {
   width: 200px;
-  height: 200px;
+  height: 300px;
   margin-bottom: 10px;
 }
 
@@ -370,14 +422,16 @@ input[type="submit"]:hover {
 .product-price {
   font-size: 1.2em;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .buy-button {
-  background-color: #2196F3;
-  color: #fff;
+  background-color: #ffbc4a;
+  color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
+  font-weight: 600;
 }
