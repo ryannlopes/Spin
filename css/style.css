@@ -43,7 +43,7 @@ body {
   background-color: #e3262e;
 }
 .dark-mode input[type="submit"]:hover {
-  background-color: #691418;
+  background-color: #e3262e;
 }
 
 .dark-mode .product-card {
@@ -107,8 +107,8 @@ nav li a:hover {
   justify-content: space-between;
 }
 .logo-navbar img {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   margin-bottom: 10px;
 }
 
@@ -119,7 +119,7 @@ nav li a:hover {
 }
 .nav-card {
   background-color: #e3262e;
-  height: 70px;
+  height: 80px;
   text-align: center;
   padding: 0px;
   top: 0;
@@ -149,7 +149,7 @@ p{
 
 /* Separando em Colunas */
 .container {
-  padding: 0 150px;
+  padding: 0 100px;
 }
 
 .container-main {
@@ -234,7 +234,6 @@ video{
 footer {
   margin-top: 80px;
   background-color: #e3262e;
-
   height: 100px;
   text-align: center;
   width: 100%;
@@ -313,7 +312,7 @@ input[type="submit"]:hover {
 .carousel {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   border-radius: 10px;
 }
