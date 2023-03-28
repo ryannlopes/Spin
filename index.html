@@ -1,138 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="img/salesforce-icon.jpg" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <title>CRM</title>
 
-    <!-- Script Modo Dark -->
-    <script>
-      function toggleDarkMode() {
-        var body = document.querySelector("body");
-        body.classList.toggle("dark-mode");
-      }
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/salesforce-icon.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+  <title>CRM</title>
 
-  <body>
- <!-- Menu Navbar -->
+  <!-- Script Modo Dark -->
+  <script>
+    function toggleDarkMode() {
+      var body = document.querySelector("body");
+      body.classList.toggle("dark-mode");
+    }
+  </script>
+
+  <script>
+    const buyButtons = document.querySelectorAll('.buy-button');
+
+    buyButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Aqui você pode adicionar a lógica para adicionar o produto ao carrinho de compras
+        console.log('Produto adicionado ao carrinho!');
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <!-- Menu Navbar -->
   <section>
     <nav>
       <div class="container">
         <ul class="logo-navbar">
-          <li><img src="img/salesforceLogo.png" height="70px" width="100px" alt="logo" /></li>
-          <li class="right"><a href="index.html">Início</a></li>
-          <li><a href="crm.html">Internet</a></li>
-          <li><a href="customer.html">Planos Movel</a></li>
-          <li><a href="login.html">TV</a></li>
-		  <li><a href="login.html">Combo Multi</a></li>
-          <li><button class="btn" onclick="toggleDarkMode()">Modo Dark</button></li>
+          <li><img src="img/logo.png" height="70px" width="100px" alt="logo" /></li>
+          <li class="right jumbotron-text"><a href="index.html">Início</a></li>
+          <li class="jumbotron-text"><a href="crm.html">Internet</a></li>
+          <li class="jumbotron-text"><a href="customer.html">Planos Movel</a></li>
+          <li class="jumbotron-text"><a href="login.html">TV</a></li>
+          <li class="jumbotron-text"><a href="login.html">Combo Multi</a></li>
+          <li class="jumbotron-text"><button class="btn" onclick="toggleDarkMode()">Modo Dark</button></li>
         </ul>
       </div>
     </nav>
   </section>
 
-    <!-- Carousel -->
-    <section>
-      <div class="main container">
-        <div class="carousel">
-          <div class="carousel-items">
-            <img class="slide-active" src="img/slide01.png" alt="Slide 1">
-            <img class="" src="img/slide02.jpg" alt="Slide 2">
-            <img class="" src="img/slide03.jpg" alt="Slide 3">
-          </div>
-          <ul class="indicators">
-            <li class="indicator active"></li>
-            <li class="indicator"></li>
-            <li class="indicator"></li>
-          </ul>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
+  <!-- Carousel -->
+  <section>
+    <div class="main container">
+      <div class="carousel">
+        <div class="carousel-items">
+          <img class="slide-active" src="img/banner-internet.png" alt="Slide 1">
+          <img class="" src="img/combo.jpg" alt="Slide 2">
+          <img class="" src="img/bannerInternet5G.png" alt="Slide 3">
         </div>
-        
+        <ul class="indicators">
+          <li class="indicator active"></li>
+          <li class="indicator"></li>
+          <li class="indicator"></li>
+        </ul>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
       </div>
-    </section>
 
-    <!-- Content -->
-    <section>
-      <div class="main">
-        <div class="container">
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section>
+    <div class="main">
+      <div class="container">
+        <!-- Banda Larga -->
+        <h1 class="titulo">Banda Larga</h1>
+        <div class="container-main">
+          <div class="primeira-coluna">
+            <div class="product-card">
+              <div class="nav-card">
+                <p class="product-price">PARA SUA CASA</p>
+              </div>
+              <img src="img/Card-Promo/card-banda-larga.png" alt="">
+              <button class="buy-button ">Contrate</button>
+            </div>
+          </div>
+          <div class="segunda-coluna">
+            <ul>
+              <li class="jumbotron-text">Turbine sua internet com Wi-Fi Plus,
+                Wi-Fi Mesh e Ponto Ultra.</li><br>
+              <li class="jumbotron-text">Wi-Fi grátis.</li><br>
+            </ul>
+          </div>
+
+          <div class="coluna-direita">
+            <img src="img/08.png" alt="">
+          </div>
+        </div>
+        <!-- Fim Banda Larga -->
+        <!-- TV -->
+        <h1 class="titulo">TV</h1>
+        <div class="container-main">
+          <div class="coluna-esquerda">
+            <img src="img/06.png" alt="">
+          </div>
+          <div class="terceira-coluna">
+            <ul>
+              <li class="jumbotron-text">Transforme sua TV em uma Smart TV,
+                com acesso fácil aos seus apps
+                de streaming favoritos.</li><br>
+              <li class="jumbotron-text">Encontre seus conteúdos
+                com comando de voz, e ainda
+                conte com os recursos de casa
+                inteligente com Alexa.</li><br>
+              <li class="jumbotron-text">Conexão wi-fi: leve sua box
+                para onde quiser.</li><br>
+            </ul>
+          </div>
+          <div class="quarta-coluna">
+            <div class="product-card">
+              <div class="nav-card">
+                <p class="product-price">Assine Box Grems TV+</p>
+              </div>
+              <img src="img/Card-Promo/facil-hd.png" alt="">
+              <button class="buy-button ">Contrate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim TV -->
+        <!-- Pós Pago -->
+        <h1 class="titulo">Pós Pago</h1>
+        <div class="container-main">
+          <div class="primeira-coluna">
+            <div class="product-card">
+              <div class="nav-card">
+                <p class="product-price">PARA SEU SMARTPHONE</p>
+              </div>
+              <img src="img/Card-Promo/claro-pos-card.png" alt="">
+              <button class="buy-button ">Contrate</button>
+            </div>
+          </div>
+          <div class="segunda-coluna">
+            <ul>
+              <li class="jumbotron-text">Internet móvel mais rápida
+                e estável do Brasil.</li><br>
+              <li class="jumbotron-text">Passaporte Américas incluso: você
+                fala e navega em 18 países
+                da América, como se estivesse
+                no Brasil.</li><br>
+              <li class="jumbotron-text">Fale à vontade com ligações
+                ilimitadas para qualquer operadora
+                do Brasil, usando o 21.</li><br>
+              <li class="jumbotron-text">Apps para navegar ilimitado,
+                sem descontar da sua internet.</li><br>
+            </ul>
+          </div>
+
+          <div class="coluna-direita">
+            <img src="img/01.png" alt="">
+          </div>
+        </div>
+        <!-- Fim Pós Pago -->
+
+
+
+
+        <!-- Contato -->
+        <section>
+          <h1 style="text-align: center" class="titulo">Entre em Contato</h1>
           <div class="container-main">
             <div class="coluna-esquerda">
-              <h1 class="titulo">Entregue sucesso agora com o Salesforce Customer 360.</h1>
-              <p class="jumbotron-text">O Customer 360 é a nossa suíte de produtos e serviços 
-                                        que ajuda 98% dos clientes a alcançar ou superar suas metas de ROI.</p>
-              <a class="btn" href="customer.html">Saiba Mais</a>
+              <form method="post" action="https://formspree.io/f/mlekwgkr">
+                <label for="nome">Nome:</label>
+                <input type="name" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input class="btn" type="submit" value="Enviar" />
+              </form>
             </div>
             <div class="coluna-direita">
-              <img class="img-responsive" src="img/banner.png" alt="">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58815.765718401795!2d-47.29683484179685!3d-22.876999299999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bbe7db7f8c87%3A0x719bf8571767736a!2sCentro%20Universit%C3%A1rio%20Adventista%20de%20S%C3%A3o%20Paulo%20Campus%20Hortol%C3%A2ndia%20-%20UNASP-HT!5e0!3m2!1spt-BR!2sbr!4v1678285597224!5m2!1spt-BR!2sbr"
+                width="500" height="350" style="border: 0" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-          </div>
-          <div style="display: flex; justify-content: center;">
-            <img class="hidden-xs hidden-sm img-responsive margin-40-top-lg center-img-horizontally" alt="" src="img/BannerCRM.png"/>
-          </div>
-          <div class="container-main">
-            <div class="coluna-esquerda">
-              <h1 class="titulo">
-                Saiba tudo sobre Gestão de Relacionamento com o Cliente.
-              </h1>
-            </div>
-            <div class="coluna-direita">
-              <p class="jumbotron-text">
-                A Gestão de Relacionamento com o Cliente, como o termo é conhecido
-                em português, vai muito além de uma plataforma ou um software: é
-                todo o processo utilizado por startups, pequenas, médias e grandes
-                empresas para gerenciar e analisar as interações com clientes,
-                antecipar necessidades e desejos, otimizar a rentabilidade,
-                aumentar as vendas e personalizar campanhas de captação de novos
-                clientes.
-              </p>
-            </div>
-          </div>
+        </section>
 
-          <!-- Contato -->
-          <section>
-            <h1 style="text-align: center">Entre em Contato</h1>
-            <div class="container-main">
-              <div class="coluna-esquerda">
-                <form method="post" action="https://formspree.io/f/mlekwgkr">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required />
-
-                  <label for="mensagem">Mensagem:</label>
-                  <textarea id="message" name="message" required></textarea>
-
-                  <input class="btn" type="submit" value="Enviar" />
-                </form>
-              </div>
-              <div class="coluna-direita">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58815.765718401795!2d-47.29683484179685!3d-22.876999299999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bbe7db7f8c87%3A0x719bf8571767736a!2sCentro%20Universit%C3%A1rio%20Adventista%20de%20S%C3%A3o%20Paulo%20Campus%20Hortol%C3%A2ndia%20-%20UNASP-HT!5e0!3m2!1spt-BR!2sbr!4v1678285597224!5m2!1spt-BR!2sbr"
-                  width="500" height="350" style="border: 0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-          </section>
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
+    </div>
 
-    <!-- Footer -->
-    <section>
-      <footer>
-        <div class="container footer">
-          <p><b>&copy; 2023 Spinner. Todos os direitos reservados.</b></p>
-        </div>
-      </footer>
-    </section>
 
-    <script src="js/script.js"></script>
-  </body>
+  </section>
+
+  <!-- Footer -->
+  <section>
+    <footer>
+      <div class="container footer">
+        <p><b>&copy; 2023 Spinner. Todos os direitos reservados.</b></p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
