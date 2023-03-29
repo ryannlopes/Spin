@@ -1,0 +1,56 @@
+/* DARK MODE */
+.dark-mode {
+    background-color: #3a3944;
+  }
+  
+  
+  .dark-mode h1, .dark-mode h2, .dark-mode p, .dark-mode th, .dark-mode td, .dark-mode li{
+    color: #fff;
+  }
+  
+  
+  .dark-mode a li, .dark-mode label {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .dark-mode .btn {
+    background-color: #e3262e;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  .dark-mode textarea{
+    background-color: #444;
+    color: white;
+  }
+  .dark-mode input[type="text"],
+  .dark-mode input[type="email"],
+  .dark-mode input[type="Name"]{
+    background-color: #444;
+    color: white;
+  }
+  
+  .dark-mode input[type="submit"]{
+    background-color: #e3262e;
+  }
+  .dark-mode input[type="submit"]:hover {
+    background-color: #e3262e;
+  }
+  
+  .dark-mode .product-card {
+    width: 300px;
+    border: 1px solid #810000;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #8a8888;
+  }
+  .dark-mode .product-price{
+    color: black;
+  }
+  .dark-mode nav{
+    background-color: #691418;
+  }
+  .dark-mode footer{
+    background-color: #691418;
+  }
+  /* FIM DARK MODE */

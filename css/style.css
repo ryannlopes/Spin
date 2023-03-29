@@ -7,128 +7,8 @@ body {
   margin: 0 !important;
 }
 
-/* Define a cor de fundo do corpo para preto */
-.dark-mode {
-  background-color: #3a3944;
-}
-
-/* Define a cor do texto para branco */
-.dark-mode h1, .dark-mode h2, .dark-mode p, .dark-mode th, .dark-mode td, .dark-mode li{
-  color: #fff;
-}
-
-/* Define outras propriedades de estilo para o modo escuro */
-.dark-mode a li, .dark-mode label {
-  color: #ccc;
-  text-decoration: none;
-}
-
-.dark-mode .btn {
-  background-color: #e3262e;
-  color: #fff;
-  border: 1px solid #fff;
-}
-.dark-mode textarea{
-  background-color: #444;
-  color: white;
-}
-.dark-mode input[type="text"],
-.dark-mode input[type="email"],
-.dark-mode input[type="Name"]{
-  background-color: #444;
-  color: white;
-}
-
-.dark-mode input[type="submit"]{
-  background-color: #e3262e;
-}
-.dark-mode input[type="submit"]:hover {
-  background-color: #e3262e;
-}
-
-.dark-mode .product-card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #fff;
-}
-.dark-mode nav{
-  background-color: #691418;
-}
-.dark-mode footer{
-  background-color: #691418;
-}
-/* Adicione outras regras de estilo conforme necessário */
-
-/* Estilizando Navbar */
-nav {
-  background-color: #e3262e;
-  height: 70px;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  padding: 0px;
-  top: 0;
-  left: 0;
-  font-size: 20;
-  overflow: hidden;
-  z-index: 9999;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display:flex;
-  align-items: center;
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #ffbc4a;
-  border-radius: 100px;
-  color: white;
-}
-
-.logo-navbar {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: space-between;
-}
-.logo-navbar .logo {
-  font-size: 35px;
-  color: white;
-  font-weight: 600;
-}
-
-/* Fim da estilização da NavBar */
 .main {
   margin-top: 100px;
-  
-}
-.nav-card {
-  background-color: #e3262e;
-  height: 80px;
-  text-align: center;
-  padding: 0px;
-  top: 0;
-  left: 0;
-  font-size: 20;
-  overflow: hidden;
-  border-radius: 10px;
-  color: white;
 }
 
 .titulo{
@@ -193,9 +73,9 @@ p{
   text-align: justify;
   font-weight: 500;
 }
+
 main {
   margin-top: 100px;
-  /* o valor de margin-top deve ser igual ou maior que a altura do menu para evitar que o conteúdo fique por trás do menu */
   padding: 20px;
 }
 
@@ -225,11 +105,36 @@ video{
   display: block;
   max-width: 100%;
   height: auto;
+  border-radius: 25px;
 }
   
 @media (max-width: 840px){
   .container {
     flex-direction: column;
+  }
+  .container-main{
+    flex-direction: column;
+  }
+  .coluna-esquerda{
+    flex-direction: column;
+  }
+  .coluna-direita{
+    flex-direction: column;
+  }
+  .primeira-coluna{
+    flex-direction: column;
+  }
+  .segunda-coluna{
+    flex-direction: column;
+  }
+  .terceira-coluna{
+    flex-direction: column;
+  }
+  .quarta-coluna{
+    flex-direction: column;
+  }
+  .container {
+    padding: 0px;
   }
 } 
 footer {
@@ -293,7 +198,7 @@ textarea {
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
-  background-color: #f0f0f0;
+  background-color: #d6d4d4;
 }
 
 input[type="submit"] {

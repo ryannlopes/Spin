@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="img/logoRedondo.png" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
@@ -37,21 +39,25 @@
   <!-- Menu Navbar -->
   <section>
     <nav>
-      <div class="container">
-        <ul class="logo-navbar">
-          <li class="logo-navbar logo">Spin</li>
-          <li class="right jumbotron-text"><a href="index.html">Início</a></li>
-          <li class="jumbotron-text"><a href="crm.html">Internet</a></li>
-          <li class="jumbotron-text"><a href="customer.html">Planos Movel</a></li>
-          <li class="jumbotron-text"><a href="login.html">TV</a></li>
-          <li class="jumbotron-text"><a href="login.html">Combo Multi</a></li>
-          <li class="jumbotron-text"><button class="btn" onclick="toggleDarkMode()">Modo Dark</button></li>
-        </ul>
+      <h3 class="logo-nav">Spin</h3>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="internet.html">Internet</a></li>
+        <li><a href="movel.html">Planos Movel</a></li>
+        <li><a href="smartphone.html">TV</a></li>
+        <li><a href="combomulti.html">Combo Multi</a></li>
+        <li><a href="smartphone.html">Smartphones</a></li>
+        <li><button class="btn" onclick="toggleDarkMode()">Modo Dark</button></li>
+      </ul>
     </nav>
   </section>
 
-  <!-- Carousel -->
+  <!-- Carousel
   <section>
     <div class="main container">
       <div class="carousel">
@@ -70,7 +76,7 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
   <!-- Content -->
   <section>
@@ -108,8 +114,9 @@
             <div class="product-card">
               <div class="nav-card">
                 <p class="product-price">PARA SUA CASA</p>
+                <h3 class="titulo">350 MEGA</h3>
               </div>
-              <img src="img/Card-Promo/card-banda-larga.png" alt="">
+              <img src="img/Card-Promo/card-banda-larga.png" style="height: 153px; width: 297px" alt="">
               <button class="buy-button ">Contrate</button>
             </div>
           </div>
@@ -122,7 +129,7 @@
           </div>
 
           <div class="coluna-direita">
-            <img src="img/08.png" alt="">
+            <img class="img-responsive" src="img/08.png" alt="">
           </div>
         </div>
         <!-- Fim Banda Larga -->
@@ -130,7 +137,7 @@
         <h1 class="titulo">TV</h1>
         <div class="container-main">
           <div class="coluna-esquerda">
-            <img src="img/06.png" alt="">
+            <img class="img-responsive" src="img/06.png" alt="">
           </div>
           <div class="terceira-coluna">
             <ul>
@@ -148,9 +155,10 @@
           <div class="quarta-coluna">
             <div class="product-card">
               <div class="nav-card">
-                <p class="product-price">Assine Box Grems TV+</p>
+                <p class="product-price">Assine Box</p>
+                <h3 class="titulo">Spin TV+</h3>
               </div>
-              <img src="img/Card-Promo/facil-hd.png" alt="">
+              <img src="img/Card-Promo/facil-hd.png" style="height: 117px; width: 199px" alt="">
               <button class="buy-button ">Contrate</button>
             </div>
           </div>
@@ -185,7 +193,7 @@
           </div>
 
           <div class="coluna-direita">
-            <img src="img/01.png" alt="">
+            <img class="img-responsive" src="img/01.png" alt="">
           </div>
         </div>
         <!-- Fim Pós Pago -->
@@ -236,6 +244,7 @@
   </section>
 
   <script src="js/script.js"></script>
+  <script src="js/mobile-navbar.js"></script>
 </body>
 
 </html>
