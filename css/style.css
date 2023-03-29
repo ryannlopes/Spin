@@ -114,24 +114,31 @@ video{
   }
   .container-main{
     flex-direction: column;
+    padding: 20px;
   }
   .coluna-esquerda{
     flex-direction: column;
+    padding: 20px;
   }
   .coluna-direita{
     flex-direction: column;
+    padding: 20px;
   }
   .primeira-coluna{
     flex-direction: column;
+    padding: 20px;
   }
   .segunda-coluna{
     flex-direction: column;
+    padding: 20px;
   }
   .terceira-coluna{
     flex-direction: column;
+    padding: 20px;
   }
   .quarta-coluna{
     flex-direction: column;
+    padding: 20px;
   }
   .container {
     padding: 0px;
