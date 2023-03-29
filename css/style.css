@@ -109,6 +109,9 @@ video{
 }
   
 @media (max-width: 840px){
+  .carousel{
+    display: none;
+  }
   .container {
     flex-direction: column;
   }
@@ -143,6 +146,7 @@ video{
   .container {
     padding: 0px;
   }
+  
 } 
 footer {
   margin-top: 80px;
