@@ -53,4 +53,7 @@
   .dark-mode footer{
     background-color: #691418;
   }
+  .dark-mode .nav-list{
+    background: #691418;
+  }
   /* FIM DARK MODE */
