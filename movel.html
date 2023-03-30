@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer 360</title>
+    <title>SPIN - Smartphones</title>
     <link rel="icon" type="image/png" href="img/salesforce-icon.jpg" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
 </head>
 <!-- Script Modo Dark -->
 <script>
@@ -19,80 +21,167 @@
     }
 </script>
 
+
 <body>
-  <!-- Menu Navbar -->
-  <section>
-    <nav>
-      <div class="container">
-        <ul class="logo-navbar">
-          <li><img src="img/logo (2).png" alt="logo" /></li>
-          <li class="right jumbotron-text"><a href="index.html">Início</a></li>
-          <li class="jumbotron-text"><a href="crm.html">Internet</a></li>
-          <li class="jumbotron-text"><a href="customer.html">Planos Movel</a></li>
-          <li class="jumbotron-text"><a href="login.html">TV</a></li>
-          <li class="jumbotron-text"><a href="login.html">Combo Multi</a></li>
-          <li class="jumbotron-text"><button class="btn" onclick="toggleDarkMode()">Modo Dark</button></li>
-        </ul>
-      </div>
-    </nav>
-  </section>
+    <!-- Menu Navbar -->
+    <section>
+        <nav>
+            <h3 class="logo-nav">Spin</h3>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="internet.html">Internet</a></li>
+                <li><a href="movel.html">Planos Movel</a></li>
+                <li><a href="tv.html">TV</a></li>
+                <li><a href="combomulti.html">Combo Multi</a></li>
+                <li><a href="smartphone.html">Smartphones</a></li>
+                <li><button class="btn" onclick="toggleDarkMode()">Modo Dark</button></li>
+            </ul>
+        </nav>
+    </section>
     <!-- Content -->
     <section>
-        <div class="main">
-            <div class="container">
-                <img class="" src="img/customer360-logo.png" alt="">
-                <div class="container-main">
-                    <div class="coluna-esquerda">
-                        <h1 class="titulo">
-                            Unifique esforços e encante os clientes com o Customer 360 e o Salesforce Genie.
-                        </h1>
+            <!-- Inicio Carrossel -->
+            <section>
+              
+                    <div class="carousel">
+                        <div class="carousel-items">
+                            <img class="slide-active" src="img/TESTE.webp" height="400" width="200" alt="Slide 1">
+                            <img class="" src="img/teste02.webp" alt="Slide 2">
+                            <img class="" src="img/teste03.webp" alt="Slide 3">
+                        </div>
+                        <ul class="indicators">
+                            <li class="indicator active"></li>
+                            <li class="indicator"></li>
+                            <li class="indicator"></li>
+                        </ul>
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
                     </div>
-                    <div class="coluna-direita">
-                        <img class="img-responsive" src="img/bannerCustumer.jpg" alt="">
+           
+            </section>
+            <!-- Fim Carrossel -->
+            <div class="main">
+                <!-- Primeira Linha -->
+                <div class="container">
+                    <h1 class="titulo">Plano Movel</h1>
+                    <div class="container-main">
+                        <div class="primeira-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Iphone/iphone11.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Iphone 11</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="segunda-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Iphone/iphone11-pro-max.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Iphone 11 Pro Max</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="terceira-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Iphone/iPhone-12.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Iphone 12</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="container-main">
-                    <div class="coluna-esquerda">
-                        <video class="img-responsive" controls>
-                            <source src="video/CustomerSlack.mp4" type="video/mp4">
-                        </video>
+                    <!-- Segunda Linha -->
+                    <div class="container-main">
+                        <div class="primeira-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Iphone/iphone-13.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Iphone 13</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="segunda-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Iphone/iphone14-pro-max.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Iphone 14 Pro Max</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="terceira-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Samsung/Samsung-Galaxy-S22.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Galaxy S22</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="coluna-direita">
-                        <h1 class="titulo">Encante os clientes e faça seu negócio avançar.</h1>
-                        <p class="jumbotron-text">Os tempo mudaram: hoje, os clientes esperam muito mais da sua empresa.</p>
-                        <p class="jumbotron-text">O Salesforce Customer 360 aproxima seus times com uma visão compartilhada
-                                                  de cada cliente, para que possam atender às exigências mais complexas trabalhando 
-                                                  de qualquer lugar.</p>
-                    </div>
-                </div>
-                <div class="container-main">
-                    <div class="coluna-esquerda">
-                        <h1 class="titulo">
-                            Customer 360: experiências de cliente conectadas
-                        </h1>
-                    </div>
-                    <div class="coluna-direita">
-                        <p class="jumbotron-text">Os times da Salesforce estão criando recursos e experiências inovadoras com o Customer 360. 
-                            Abaixo, separamos exemplos que ilustram algumas vantagens e diferenciais dessa iniciativa:</p>
-                            <ul>
-                                <li>O Service Cloud Agent Console incluirá um perfil de cliente reconciliado, um pedido do Commerce Cloud e os dados do carrinho de compras, além da capacidade de fazer pedidos em nome de um cliente, tudo com o suporte do Customer 360;</li><br>
-                                <li>O Marketing Cloud poderá desencadear jornadas de carrinho de compras abandonadas, acionadas pelo Commerce Cloud, impulsionadas pelo Customer 360;</li><br>
-                                <li>Interface do usuário baseada em cliques para gerenciamento de aplicativos e dados: essa interface permitirá que os administradores estabeleçam conexões confiáveis ​​entre os aplicativos e as organizações da Salesforce.</li>
-                              </ul>
+                    <!-- Terceira Linha -->
+                    <div class="container-main">
+                        <div class="primeira-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Samsung/Samsung-galaxy-s22-ultra.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Galaxy S22 Ultra</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="segunda-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Xiaomi/mi-11.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Xiaomi MI 11</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="terceira-coluna">
+                            <div class="product-card">
+                                <div class="nav-card">
+                                  <img src="img/Produtos/Xiaomi/note-11s.png" style="height: 350px; width: 300px" alt="">
+                                  <h3 class="titulo">Xiaomi Note 11S</h3>
+                                  <p class="product-price">R$ 0,00</p>
+                                  <p class="product-price">
+                                </div>
+                                <button class="buy-button ">Comprar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
         </div>
     </section>
     <section>
         <footer>
-          <div class="container footer">
-            <p><b>&copy; 2023 Spinner. Todos os direitos reservados.</b></p>
-          </div>
+            <div class="container footer">
+                <p><b>&copy; 2023 Spinner. Todos os direitos reservados.</b></p>
+            </div>
         </footer>
-      </section>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/mobile-navbar.js"></script>
 </body>
 
 </html>
