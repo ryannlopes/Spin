@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPIN - Smartphones</title>
+    <title>SPIN - Internet</title>
     <link rel="icon" type="image/png" href="img/salesforce-icon.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,22 +24,36 @@
 
 <body>
     <!-- Menu Navbar -->
-    <section>
+    <section style="height: 8vh;">
         <nav>
-            <h3 class="logo-nav">Spin</h3>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="container h-100">
+                <div class="navbar">
+                    <div>
+                        <a href="index.html" class="logo-nav">Spin</a>
+                    </div>
+                    <div class="h-100" style="display: flex; align-items: center;">
+                        <div class="mobile-menu">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <ul class="nav-list h-100">
+                            <a href="internet.html" class="item-navbar"><li title="Internet">Internet</li></a>
+                            <a href="movel.html" class="item-navbar"><li title="Planos Móveis">Planos Móveis</li></a>
+                            <a href="tv.html" class="item-navbar"><li title="TV">TV</li></a>
+                            <!-- <a href="combomulti.html"><li title="Combo Multi" class="item-navbar">Combo Multi</li></a> -->
+                            <a href="smartphone.html" class="item-navbar"><li title="Smartphones">Smartphones</li></a>
+                            <li>
+                                <button class="btn" onclick="toggleDarkMode()">Modo Dark</button>
+                                <!-- <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+                                <span>🌞</span>
+                                <span>🌜</span>
+                                </button> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="internet.html">Internet</a></li>
-                <li><a href="movel.html">Planos Movel</a></li>
-                <li><a href="tv.html">TV</a></li>
-                <li><a href="smartphone.html">Smartphones</a></li>
-                <li><button class="btn" onclick="toggleDarkMode()">Modo Dark</button></li>
-            </ul>
         </nav>
     </section>
     <!-- Content -->
