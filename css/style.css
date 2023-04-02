@@ -1,5 +1,6 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto";
+  margin: 0;
 }
 
 body {
@@ -7,26 +8,90 @@ body {
   margin: 0 !important;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+.mt-80 {
+  margin-top: 80px !important;
+}
+
+.pt-50 {
+  padding-top: 50px !important;
+}
+
+.pb-50 {
+  padding-bottom: 50px !important;
+}
+
+.h-450 {
+  height: 450px;
+}
+
 .main {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .titulo {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   color: #e3262e;
-  margin-left: 20px;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 20px;
+.bg-gray {
+  background-color: #e5e5e5;
 }
+
+/* p {
+  font-family: Arial, Helvetica, sans-serif;
+} */
 
 .list {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   color: #e3262e;
   padding: 20px;
+}
+
+.presentation-card {
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  width: 60%;
+}
+
+.presentation-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  margin: 40px 40px 0 40px;
+  padding: 0;
+}
+
+.presentation-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  color: #57585c;
 }
 
 /* Separando em Colunas */
@@ -36,23 +101,23 @@ p {
 
 .container-main {
   display: flex;
-  flex-direction: row;
 }
 
 .coluna-esquerda {
   flex-basis: 50%;
-  padding: 20px;
+  padding: 0 20px 0 0;
 }
 
 .coluna-direita {
   flex-basis: 50%;
-  padding: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .primeira-coluna {
   flex-basis: 25%;
   padding: 20px;
 }
+
 .segunda-coluna {
   flex-basis: 25%;
   padding: 20px;
@@ -69,9 +134,11 @@ p {
 }
 
 .jumbotron-text {
-  font-size: 17px;
-  text-align: justify;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  color: #57585c;
 }
 
 main {
@@ -115,7 +182,6 @@ video {
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 25px;
 }
 
 @media (max-width: 840px) {
@@ -169,7 +235,6 @@ video {
 }
 
 footer {
-  margin-top: 80px;
   background-color: #e3262e;
   height: 100px;
   text-align: center;
@@ -212,12 +277,14 @@ th {
 
 .btn {
   padding: 10px 20px;
-  background-color: #691418;
+  background-color: #99181e;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 input[type="text"],
@@ -225,32 +292,41 @@ input[type="email"],
 input[type="name"],
 textarea {
   display: block;
-  width: 100%;
-  padding: 10px;
+  width: 95%;
+  padding: 15px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
-  background-color: #d6d4d4;
+  background-color: #fff;
+  color: #212529;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 input[type="submit"] {
-  background-color: #e3262e;
-  color: white;
+  background-color: transparent;
+  color: #e3262e;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #e3262e;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s ease-out;
+  width: 150px;
 }
 
 input[type="submit"]:hover {
   background-color: #e3262e;
+  color: #fff;
+  transition: all 0.2s ease-out;
 }
 
 /* Carousel */
 .carousel {
   position: relative;
   width: 100%;
-  height: 520px;
+  height: 416px;
   overflow: hidden;
 }
 
@@ -335,12 +411,11 @@ input[type="submit"]:hover {
   z-index: 1 !important;
   opacity: 1 !important;
 }
+
 /* End Carousel */
 
 .product-card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  width: 40%;
   text-align: center;
 }
 
@@ -383,13 +458,21 @@ input[type="submit"]:hover {
 
 .buy-button {
   background-color: #ffbc4a;
-  color: black;
-  border: none;
-  border-radius: 20px;
+  color: #272727;
+  border: 1px solid #ffbc4a;
+  border-radius: 5px;
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
   font-weight: 600;
+  transition: all 0.2s ease-out;
+}
+
+.buy-button:hover {
+  background-color: transparent;
+  border: 1px solid #ffbc4a;
+  color: #272727;
+  transition: all 0.2s ease-out;
 }
 
 /* dark mode */

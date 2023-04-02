@@ -3,8 +3,8 @@ nav li a {
   text-decoration: none;
   transition: 0.3s;
 }
-  
-.nav-list > .item-navbar:hover {
+
+.nav-list>.item-navbar:hover {
   /* text-decoration: underline;
   text-decoration-color: white; */
   background-color: #d1212a;
@@ -54,8 +54,10 @@ nav {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   margin: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .nav-list li {
@@ -71,7 +73,7 @@ nav {
   cursor: pointer;
 }
 
-.mobile-menu > .line {
+.mobile-menu>.line {
   width: 32px;
   height: 2px;
   background: #fff;
@@ -122,6 +124,7 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
