@@ -36,14 +36,6 @@
   .dark-mode input[type="submit"]:hover {
     background-color: #e3262e;
   }
-  
-  .dark-mode .product-card {
-    width: 300px;
-    border: 1px solid #810000;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #8a8888;
-  }
   .dark-mode .product-price{
     color: black;
   }
@@ -56,4 +48,16 @@
   .dark-mode .nav-list{
     background: #691418;
   }
+  .dark-mode .body-card{
+    background-color: #b8b8b8;
+    color: black;
+  }
+  .dark-mode .body-card li, .dark-mode .body-card p{
+    color: black;
+  }
+
+  .dark-mode .bg-gray{
+    background-color: #3a3944;
+  }
+
   /* FIM DARK MODE */
