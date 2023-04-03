@@ -24,6 +24,18 @@ body {
   align-items: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
 .mt-60 {
   margin-top: 60px !important;
 }
@@ -94,6 +106,81 @@ body {
   color: #57585c;
 }
 
+.card {
+  width: 25%;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.nav-card {
+  width: 100%;
+  background-color: #b41e13;
+  padding: 10px 0 10px;
+}
+
+.card-title {
+  color: #fff;
+  font-family: var(--font-family-highlight);
+  font-size: 1.75rem;
+  margin: 10px 0 0 20px;
+}
+
+.card-subtitle {
+  color: #fff;
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+  margin: 10px 0 0 20px;
+  font-weight: 400;
+}
+
+.apps-included {
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.body-card {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding: 20px 0;
+  height: 100%;
+}
+
+.card-benefits {
+  margin-bottom: 10px;
+}
+
+.card-benefits-title {
+  color: #000;
+  font-size: 1.1rem;
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.card-benefits-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  margin-right: 30px;
+}
+
+.card-benefits-items li::before {
+  content: "→ ";
+}
+
+.benefits-text {
+  color: #000;
+  font-size: 1rem;
+}
+
 /* Separando em Colunas */
 .container {
   padding: 0 100px;
@@ -101,6 +188,7 @@ body {
 
 .container-main {
   display: flex;
+  justify-content: center;
 }
 
 .coluna-esquerda {
@@ -187,6 +275,11 @@ video {
 @media (max-width: 840px) {
   .carousel {
     display: none;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .container {
@@ -446,7 +539,8 @@ input[type="submit"]:hover {
 }
 
 .product-price {
-  font-size: 1.2em;
+  font-family: var(--font-family-highlight);
+  font-size: 24px;
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -454,6 +548,25 @@ input[type="submit"]:hover {
 .sub-titulo {
   color: white;
   font-weight: 600;
+}
+
+.title-header {
+  color: #000;
+  font-family: var(--font-family-highlight);
+  font-weight: 600;
+  line-height: normal;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+.subtitle-header {
+  color: #000;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none;
+  font-size: 1rem;
+  margin-bottom: 30px;
 }
 
 .buy-button {
