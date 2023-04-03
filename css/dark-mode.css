@@ -60,4 +60,13 @@
     background-color: #3a3944;
   }
 
+  .dark-mode .presentation-text{
+    color: black;
+  }
+
+  .dark-mode .presentation-items .titulo{
+    color: #e3262e;
+  }
+
+
   /* FIM DARK MODE */
