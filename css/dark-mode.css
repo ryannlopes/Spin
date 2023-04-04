@@ -68,5 +68,8 @@
     color: #e3262e;
   }
 
+  .dark-mode .nav-card-phone {
+    background-color: #afafaf !important
+  }
 
   /* FIM DARK MODE */
