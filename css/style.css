@@ -28,12 +28,24 @@ body {
   justify-content: center !important;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
 .align-items-center {
   align-items: center !important;
 }
 
 .flex-wrap {
   flex-wrap: wrap !important;
+}
+
+.flex-basics-40 {
+  flex-basis: 40%;
+}
+
+.flex-basics-60 {
+  flex-basis: 60%;
 }
 
 .m-10 {
@@ -48,12 +60,20 @@ body {
   margin-right: 20px !important;
 }
 
+.mr-50 {
+  margin-right: 50px !important;
+}
+
 .mt-60 {
   margin-top: 60px !important;
 }
 
 .mt-80 {
   margin-top: 80px !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
 }
 
 .mb-5 {
@@ -72,8 +92,16 @@ body {
   margin-top: 70px !important;
 }
 
+.mt-40 {
+  margin-top: 40px !important;
+}
+
 .m-0 {
   margin: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
 }
 
 .pt-50 {
