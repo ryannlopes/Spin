@@ -1,4 +1,4 @@
-# CRM
+# Spin
 Trabalho 01 - Fundamentos Web
 
 O Projeto tem como o objetivo de criar um site utilizando HTML e CSS.
